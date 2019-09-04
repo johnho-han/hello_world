@@ -25,7 +25,7 @@ module.exports = {
       repo : 'git@github.com:johnho-han/hello_world.git',
       path : '/home/platform/workspace/hanzhenhao/hello_world',
       ssh_options:"StrictHostKeyChecking=no",
-'post-deploy' : '/root/.pm2/modules/pm2-logrotate/node_modules/.bin/pm2 reload ecosystem.config.js --env production',
+'post-deploy' : 'pm2 reload ecosystem.config.js --env production',
       env:{
               "NODE_ENV":"production"
           }
