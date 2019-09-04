@@ -24,7 +24,10 @@ module.exports = {
       ref  : 'origin/master',
       repo : 'git@github.com:johnho-han/hello_world.git',
       path : '/home/platform/workspace/hanzhenhao/hello_world',
-      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
+      ssh_options:"StrictHostKeyChecking=no",
+      env:{
+              "NODE_ENV":"production"
+          }
     }
   }
 };
