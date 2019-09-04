@@ -22,7 +22,7 @@ module.exports = {
       user : 'root',
       host : ['172.18.6.241'],
       ref  : 'origin/master',
-      repo : 'git@github.com:repo.git',
+      repo : 'git@github.com:johnho-han/hello_world.git',
       path : '/home/platform/workspace/hanzhenhao/hello_world',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
     }
